@@ -8,27 +8,32 @@ body {
 	background-color: #f3f3f3;
 }
 
-.flexbox {
-	display: flex;
-	justify-content: space-between;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
+.app {
+	max-width: 400px;
 	margin: 0 auto;
 }
 
-.flexbox .board {
+.characters li {
 	display: flex;
-	flex-direction: column;
-	width: 100%;
-	max-width: 300px;
-	background-color: #313131;
-	padding: 15px;
+	align-items: center;
+	border: solid 2px #d0d0d0;
+	border-radius: 0.2em;
+	padding: 0.5em 0.8em 0.5em 0.5em;
+	margin-bottom: 1em;
 }
 
-.flexbox .board .card {
-	padding: 15px 25px;
-	background-color: #f3f3f3;
-	cursor: pointer;
-	margin-bottom: 15px;
+.characters p {
+	max-width: none;
+	font-weight: bold;
+	margin: 0;
+}
+
+.characters-thumb {
+	overflow: hidden;
+	flex-shrink: 0;
+	width: 2em;
+	height: 2em;
+	background-color: #e8e8e8;
+	padding: 0.5em;
+	margin-right: 0.5em;
 }
